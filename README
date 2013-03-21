@@ -1,0 +1,50 @@
+NAME
+
+Message::Transform - Fast, simple message transformations
+
+SYNOPSIS
+
+    use Message::Transform qw(mtransform);
+
+    my $message = {a => 'b'};
+    mtransform($message, {x => 'y'});
+    #$message contains {a => 'b', x => 'y'}
+
+    my $message = {a => 'b'};
+    mtransform($message, {c => {d => 'e'}});
+    #$message contains {a => 'b', c => {d => 'e'}}
+
+    my $message = {a => 'b'};
+    mtransform($message, {x => ' specials/$message->{a}'});
+    #$message contains {a => 'b', x => 'b'}
+
+DESCRIPTION
+
+This is a very very light-weight and fast library that does some basic but
+reasonably powerful message substitutions.
+
+FUNCTION
+
+  mtransform($message, $transform);
+
+Takes two and only two arguments, both HASH references.
+
+SEE ALSO
+
+TODO
+
+More special handling.
+
+Recursive transforms.
+
+BUGS
+
+None known.
+
+COPYRIGHT
+
+Copyright (c) 2013 Dana M. Diederich. All Rights Reserved.
+
+AUTHOR
+
+Dana M. Diederich <diederich@gmail.com>
