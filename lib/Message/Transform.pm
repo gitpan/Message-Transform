@@ -6,7 +6,7 @@ use vars qw($VERSION @ISA @EXPORT_OK);
 @ISA = qw(Exporter);
 @EXPORT_OK = qw(mtransform);
 
-$VERSION = '0.2';
+$VERSION = '0.3';
 
 sub mtransform {
     my ($message, $transform) = @_;

@@ -1,23 +1,15 @@
 ---
 abstract: 'Fast, simple message transformations'
 author:
-  - 'Dana M. Diederich <diederich@gmail.com>'
-build_requires:
-  Test::More: 0
+  - 'Dana M. Diederich <diederich@realms.org>'
+build_requires: {}
 configure_requires:
-  Module::Build: 0
-dynamic_config: 1
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.120630'
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Message-Transform
-provides:
-  Message::Transform:
-    file: lib/Message/Transform.pm
-    version: 0.2
-requires:
-resources:
-  license: http://dev.perl.org/licenses/
-version: 0.2
+version: 0.3
