@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Fast, simple message transformations",
-  "AUTHOR" => "Dana M. Diederich <diederich\@realms.org>",
+  "AUTHOR" => "Dana M. Diederich <dana\@realms.org>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
@@ -19,9 +19,22 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "Message::Transform",
-  "PREREQ_PM" => {},
-  "TEST_REQUIRES" => {},
-  "VERSION" => "0.3",
+  "PREREQ_PM" => {
+    "Exporter" => 0,
+    "strict" => 0,
+    "vars" => 0,
+    "warnings" => 0
+  },
+  "TEST_REQUIRES" => {
+    "English" => 0,
+    "File::Spec" => 0,
+    "Test::More" => 0,
+    "Test::Perl::Critic" => 0,
+    "Test::Perl::Critic::Progressive" => 0,
+    "Test::PerlTidy" => 0,
+    "lib" => 0
+  },
+  "VERSION" => "1.132260",
   "test" => {
     "TESTS" => "t/*.t"
   }
